@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7478ecf51a.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 id="name">Portfolio</h1>
+                <ul id="sidemenu">
+                    <li><a href="#Header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Services">Skills</a></li>
+                    <li><a href="#Portfolio">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+            <h1>Hi, this is <span>Badi Dinesh Reddy.</span><br><h2>I'm <span style="color: #ff004f;" class="text"></span></h2></h1>
+            <h5>I have a strong passion for software development and a keen interest in <br>learning new technologies and frame works. I have experience in developing <br> web applications and also done some projects using java, Spring Boot and Frontend.</h5>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------about--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Dinesh1.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi! I'm Badi Dinesh Reddy, a recent graduate student of Electrical and Electronics Engineering at NBKR Institute of Science and Technology, I find myself drawn to the intricate world of coading and technical skills.</p>
+                    <br>
+                    <p>I’ve had work on some exciting projects, including developing Music Fullstack Apllication and clones of Amazon web services. These projects were not just about coding; they were about understanding complex systems, breaking them down, and recreating them. The satisfaction of seeing my code come to life in these projects is indescribable.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front End Development</span><br>creating the visual layout,user interface, and user experience that users see and interact with the application.</li>
+                        <li><span>Back End Development</span><br>Giving Infrastucture to the web application.</li>
+                        <li><span>Data Base Development</span><br>Implements, and manages databases to store, retrieve, and manipulate data efficiently.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023</span><br>Intern at KodNest Technlogies(Bengaluru)</li>
+                        <p>where I acquired practical skills in Java, Full Stack, SQL, A contributing to real-world 
+                            projects and learning directly from industry professionals.
+                            </p>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019 - 2013</span><br>B.TECH from NBKR Institute of Science and Technology</li>
+                        <li><span>2017 - 2019</span><br>INTERMEDIATE from Sri Chaitanya Jr College</li>
+                        <li><span>2017</span><br>10th from Vasista EM high School</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------services------- -->
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front End Development</h2>
+                    <br/>
+                    <p>As a web developer with a strong command over HTML, CSS, and JavaScript, I am equipped to create dynamic, interactive, and aesthetically pleasing websites.</p>
+                    <br/>
+                    <p>I have successfully developed a clone of the renowned e-commerce platform, Amazon. The project utilizes HTML for structuring the content, while CSS and JavaScript are employed for styling and functionality, respectively.</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Back End Development</h2>
+                    <p>As a proficient Java developer, I have a strong understanding of core Java concepts and the principles of Object-Oriented Programming (OOP). My expertise in Java allows me to create robust and efficient applications.</p>
+                    <br/>
+                    <p>In terms of core Java, I have a solid grasp of fundamentals like variables, data types, operators, control statements, arrays, and more. I am also comfortable with more advanced topics such as exceptions, multithreading, collections, and generics.</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Data Base Development</h2>
+                    <br/>
+                    <p>With a strong foundation in MySQL, I have honed my skills in database management. My proficiency in SQL allows me to efficiently query, update, and manipulate data. I am adept at creating and modifying database structures, optimizing queries for performance, and ensuring data integrity through the use of transactions and proper error handling.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!---- ------------portfolio---------- -->
+   <div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/music-player-app-.avif">
+                <div class="layer">
+                    <h2>Tune Hub</h2><br/>
+                    <p>Skills Utilized: Java, Spring Boot, Hibernate, MySQL, HTML and CSS</p><br/>
+                    <p>Tune Hub is a Music full stack web application. The admin user can add new Songs while the customer can enjoy music after the payment.</p><br>
+                    <p>The users need to register and login to access functionalities.</p>
+                    <a href="https://github.com/dinesh0118/TuneHub/tree/master"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.jpg">
+                <div class="layer">
+                    <h2>Amazon Clone</h2><br/>
+                    <p>Skills Utilized: HTML & css</p><br>
+                    <p>Created a e-commerce website inspired by Amazon's interface using HTML, CSS, and JavaScript. Employed responsive design techniques to ensure seamless user experience across various screen sizes, prioritizing accessibility and user-friendliness.</p>
+                    <a href="https://dinesh0118.github.io/AmazonClone/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="">
+            </div>
+        </div>
+        <a href="#" class="btn">see more</a>
+    </div>
+   </div>
+
+   <!-- --------- contact----------  -->
+   <div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact me</h1>
+              <p><i class="fa-solid fa-paper-plane"></i> badidineshreddy321@gmail.com</p>
+              <p><i class="fa-solid fa-square-phone"></i> 9494099967</p>
+              <br/>
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/in/badidineshreddy/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/dinesh0118"><i class="fa-brands fa-github"></i></a>
+                <a href="https://rb.gy/vnl7o"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/_h.o.n.e.y_l.o.v.e.s_/"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+              <a href="resume/DineshReddy Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+   </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+       }
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+        
+
+
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxbTlEGv_S9SDZ64yEAcvvBgyI0xVUS65pTtaE0vGj5mrOqE0d1MXb_PT0Xluan41W3/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script src="main.js"></script>
+    
+</body>
+</html>
